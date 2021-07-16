@@ -1,0 +1,9 @@
+/* Custom Discord logo colour */
+/* Preview: https://i.imgur.com/S4pJVwK.png */
+
+:root{
+    --logo-color: #000000; /* change colour here */
+  }
+  .wordmarkWindows-1v0lYD path {
+    fill: var(--logo-color)
+  }
