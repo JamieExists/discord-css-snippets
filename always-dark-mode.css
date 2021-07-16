@@ -1,13 +1,81 @@
+[data-popout-root].newBrand, html.newBrand {
+    --brand-experiment-100: #f7f7fe;
+    --brand-experiment-130: #f0f1fe;
+    --brand-experiment-160: #e7e9fd;
+    --brand-experiment-200: #dee0fc;
+    --brand-experiment-230: #d4d7fc;
+    --brand-experiment-260: #c9cdfb;
+    --brand-experiment-300: #bcc1fa;
+    --brand-experiment-330: #a8aff8;
+    --brand-experiment-360: #949cf7;
+    --brand-experiment-400: #7984f5;
+    --brand-experiment-430: #707bf4;
+    --brand-experiment-460: #6571f3;
+    --brand-experiment    : #5865f2;
+    --brand-experiment-500: #5865f2;
+    --brand-experiment-530: #505cdc;
+    --brand-experiment-560: #4752c4;
+    --brand-experiment-600: #3c45a5;
+    --brand-experiment-630: #343b8f;
+    --brand-experiment-660: #2d347d;
+    --brand-experiment-700: #232861;
+    --brand-experiment-730: #21265b;
+    --brand-experiment-760: #1e2353;
+    --brand-experiment-800: #1a1e49;
+    --brand-experiment-830: #141738;
+    --brand-experiment-860: #0d0f24;
+    --brand-experiment-900: #04050c;
+    --brand-experiment-05a: rgba(88,101,242,0.05);
+    --brand-experiment-10a: rgba(88,101,242,0.1);
+    --brand-experiment-15a: rgba(88,101,242,0.15);
+    --brand-experiment-20a: rgba(88,101,242,0.2);
+    --brand-experiment-25a: rgba(88,101,242,0.25);
+    --brand-experiment-30a: rgba(88,101,242,0.3);
+    --brand-experiment-35a: rgba(88,101,242,0.35);
+    --brand-experiment-40a: rgba(88,101,242,0.4);
+    --brand-experiment-45a: rgba(88,101,242,0.45);
+    --brand-experiment-50a: rgba(88,101,242,0.5);
+    --brand-experiment-55a: rgba(88,101,242,0.55);
+    --brand-experiment-60a: rgba(88,101,242,0.6);
+    --brand-experiment-65a: rgba(88,101,242,0.65);
+    --brand-experiment-70a: rgba(88,101,242,0.7);
+    --brand-experiment-75a: rgba(88,101,242,0.75);
+    --brand-experiment-80a: rgba(88,101,242,0.8);
+    --brand-experiment-85a: rgba(88,101,242,0.85);
+    --brand-experiment-90a: rgba(88,101,242,0.9);
+    --brand-experiment-95a: rgba(88,101,242,0.95);
+    --font-display: Ginto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    --control-brand-foreground: var(--control-brand-foreground-new);
+}
+:root {
+    --bdfdb-blurple: var(--brand-experiment, #5865f2);
+    --bdfdb-green: var(--status-positive-background, #3ba55c);
+    --bdfdb-yellow: var(--status-warning-background, #faa61a);
+    --bdfdb-red: var(--status-danger-background, #ed4245);
+}
+.theme-light {
+    --text-warning: #faa61a;
+    --text-danger: #ed4245;
+    --info-positive-background: rgba(59,165,92,0.1);
+    --info-positive-foreground: #3ba55c;
+    --info-warning-background: rgba(250,166,26,0.1);
+    --info-warning-foreground: #faa61a;
+    --info-danger-background: rgba(237,66,69,0.1);
+    --info-danger-foreground: #ed4245;
+    --status-positive-background: #3ba55c;
+    --status-positive-text: #fff;
+    --status-warning-background: #faa61a;
+    --status-danger-background: #ed4245;
+    --status-danger-text: #fff;
+    --focus-primary: #00b0f4;
+}
 .theme-light {
     --header-primary: #fff;
     --header-secondary: #b9bbbe;
     --text-normal: #dcddde;
     --text-muted: #72767d;
-    --text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
-    --text-link-low-saturation: hsl(197,calc(var(--saturation-factor, 1)*100%),52.9%);
-    --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%);
-    --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
-    --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+    --text-link: #00b0f4;
+    --text-positive: #4fdc7b;
     --interactive-normal: #b9bbbe;
     --interactive-hover: #dcddde;
     --interactive-active: #fff;
@@ -27,14 +95,14 @@
     --info-positive-text: #fff;
     --info-warning-text: #fff;
     --info-danger-text: #fff;
-    --info-help-background: hsla(197,calc(var(--saturation-factor, 1)*100%),47.8%,0.1);
-    --info-help-foreground: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+    --info-help-background: rgba(0,176,244,0.1);
+    --info-help-foreground: #00b0f4;
     --info-help-text: #fff;
     --status-warning-text: #000;
     --scrollbar-thin-thumb: #202225;
     --scrollbar-thin-track: transparent;
     --scrollbar-auto-thumb: #202225;
-    --scrollbar-auto-track: hsl(210,calc(var(--saturation-factor, 1)*9.8%),20%);
+    --scrollbar-auto-track: #2e3338;
     --scrollbar-auto-scrollbar-color-thumb: #202225;
     --scrollbar-auto-scrollbar-color-track: #2f3136;
     --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
@@ -42,10 +110,10 @@
     --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
     --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
     --logo-primary: #fff;
-    --control-brand-foreground: hsl(227,calc(var(--saturation-factor, 1)*57.9%),77.6%);
-    --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
-    --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
-    --background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.08);
+    --control-brand-foreground: #a5b3e7;
+    --control-brand-foreground-new: #949cf7;
+    --background-mentioned: rgba(250,166,26,0.1);
+    --background-mentioned-hover: rgba(250,166,26,0.08);
     --background-message-hover: rgba(4,4,5,0.07);
     --channels-default: #8e9297;
     --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
@@ -62,9 +130,4 @@
     --deprecated-text-input-border-hover: #040405;
     --deprecated-text-input-border-disabled: #202225;
     --deprecated-text-input-prefix: #dcddde;
-}
-
-.theme-light {
-    --brightness: calc(1.5 - var(--saturation-factor, 1)*0.5);
-    --contrast: var(--saturation-factor,1);
 }
